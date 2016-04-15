@@ -92,6 +92,7 @@
           };
 
           $element.bind('click', function (event) {
+            console.log(event);
             event.stopPropagation();
             if (!$scope.dropdownDisabled) {
               DropdownService.toggleActive($element);
